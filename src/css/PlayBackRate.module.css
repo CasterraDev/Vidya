@@ -1,0 +1,94 @@
+.playBackRateControl{
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    justify-content: center;
+    border-radius: 12px;
+    width: 40px;
+    margin-top: -8px;
+    transition: 500ms opacity;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playBackRateControl:hover{
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.speedBtn{
+    width: min-content;
+}
+
+.text{
+    color:white;
+    font-weight: 700;
+    letter-spacing: .5px;
+    position: relative;
+    top:-1px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.container{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.container:hover .menuList{
+    display: block;
+    position:absolute;
+    bottom:100%; /* change to TOP and it will drop down */
+    border:solid 1px black;
+}
+
+.menuList{
+    display: none;
+    position: absolute;
+    background: #1D253F;
+    border:none;
+    min-width: 50px;
+    z-index: 2;
+    border-radius: 12px;
+    width: 60px;
+
+}
+
+.menuGroup{
+    color:white;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.menuItem{
+    cursor: pointer;
+    height: 40px;
+    width:100%;
+    justify-content: space-between;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuItem:hover{
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.menuItem:focus{
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.menuItem *{
+    margin: 2px;
+}
